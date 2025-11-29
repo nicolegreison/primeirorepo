@@ -1,66 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Linkin Park Melhor Bana</title>
-<link rel="stylesheet" href="../css/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Linkin Park</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#000000;}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:'Inter',system-ui;background:var(--bg);color:#e6e6e6;}
+
+    header{
+      width:100%;
+      padding:40px 20px;
+      text-align:center;
+      background:linear-gradient(90deg,var(--accent1),var(--accent2));
+    }
+    header h1{margin:0;font-size:42px;font-weight:700;letter-spacing:1px}
+    header p{margin:8px 0 0;color:#eee}
+
+    .hero{
+      width:100%;
+      height:60vh;
+      background:url('img/header.jpg') center/cover no-repeat;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position:relative;
+    }
+    .hero::after{
+      content:'';
+      position:absolute;
+      inset:0;
+      background:linear-gradient(180deg,rgba(0,0,0,0.4),rgba(0,0,0,0.85));
+    }
+    .hero h2{
+      position:relative;
+      z-index:2;
+      font-size:38px;
+      text-align:center;
+      max-width:600px;
+      line-height:1.3;
+    }
+
+    section{
+      padding:60px 20px;
+      max-width:1100px;
+      margin:auto;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:20px;
+      margin-top:20px;
+    }
+    .gallery div{
+      border-radius:12px;
+      overflow:hidden;
+      border:1px solid #222;
+    }
+    .gallery img{
+      width:100%;height:100%;object-fit:cover;display:block;
+      transition:transform .4s ease;
+    }
+    .gallery img:hover{transform:scale(1.06)}
+
+    footer{
+      padding:40px;
+      text-align:center;
+      font-size:14px;
+      color:var(--muted);
+      border-top:1px solid #222;
+      margin-top:60px;
+    }
+  </style>
 </head>
 <body>
-<header>
-  <div class="logo"></div> Linkin Park Fanpage</div>
-  <nav>
+  <header>
+    <h1>Linkin Park</h1>
+    <p>Uma homenagem visual à melhor banda do planeta terra.</p>
+      <nav>
     <a href="../index.html">Voltar</a>
   </nav>
-</header>
+  </header>
 
-<main>
-<section id="hero">
-    <div class="video-background">
-<iframe src="https://www.youtube.com/embed/D2ts2GWOSv8?si=WWTMNLbOVtKecn6M" 
-frameborder="0" allow="autoplay;fullscreen"></iframe>
-    </div>
+  <section class="hero">
+    <h2>"FROM THE TOP TO THE BOTTOM"</h2>
+  </section>
 
-    <div class="hero-content">
-      <h1>Melhor Banda do Planeta Terra</h1>
-      <p></p>
+  <section>
+    <h2 style="margin-bottom:14px">Galeria</h2>
+    <p style="color:var(--muted)">Seleção de imagens BRABAS</p>
+
+    <div class="gallery">
+      <div><img src="img/banda1.jpg" alt="LP"></div>
+      <div><img src="img/banda2.jpg" alt="LP"></div>
+      <div><img src="img/banda3.jpg" alt="LP"></div>
+      <div><img src="img/banda4.jpg" alt="LP"></div>
     </div>
   </section>
 
-    <section class="catalogo-intro">
-    <img class="filme-logo" src="img\header.jpg" alt="as lendas">
-
-    <div class="catalogo-texto">
-        <h2>
-           Pagina de apreciação destinada ao maior acontecimento do início dos anos 2000
-        </h2>
-    </div>
-</section>
-
-  <section id="catalogo" class="section-style">
-    <h2>Melhores Álbuns</h2>
-    <div class="cards">
-      <div class="card">
-        <div class="play-button">▸</div>
-        <img src="img\Linkin_Park_Hybrid_Theory.jpg" alt="Hybrid_Theory">
-        <p>Hybrid Theory</p>
-      </div>
-
-      <div class="card">
-        <img src="img\Linkin_park-meteora_a.jpg" alt="Meteora">
-        <p>Meteora</p>
-      </div>
-
-      <div class="card">
-        <img src="img\Linkin_Park_Minutes_to_Midnight.jpg" alt="Filme 6">
-        <p>Minutes To Midnight</p>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <p>2025 Fanpage do Linkin Park</p>
-</footer>
+  <footer>
+    Merece um 10 que eu sei
+  </footer>
 </body>
 </html>
