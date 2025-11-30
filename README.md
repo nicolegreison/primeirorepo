@@ -1,9 +1,9 @@
-#  - Projeto CPW
+# Projeto CPW
 
 ## Integrantes
 - Nicole Greison — Função: CSS, layout e design
-- Eduardo Cullmann — Função: HTML, conteúdo, JS sobre o Easter Egg LP
-- Leonardo coloca o seu tb — Função: Html, funcionalidade, JS
+- Eduardo Cullmann — Função: HTML, conteúdo, JS (Easter Egg LP)
+- Leonardo Gaboardi Porto Machado — Função: Testes e imagens
 
 ## Sumário do projeto
 Website estilo locadora de filmes, inspirado na MUBI. Catálogo de filmes, easter egg secreto que abre uma fanpage do Linkin Park.
@@ -18,3 +18,4 @@ Website estilo locadora de filmes, inspirado na MUBI. Catálogo de filmes, easte
 
 ## Link do site
 COLOCAR AQUIIII
+
