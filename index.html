@@ -1,96 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BreakingTheMovies</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreakingTheMovies</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-
 <body>
-<header>
-  <div class="logo">BreakingTheMovies</div>
-  <nav>
-    <a href="index.html">Início</a>
-    <a href="sobre/index.html">Sobre</a>
-  </nav>
-</header>
 
-<main>
+    <header class="hero">
+        
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="video/video1.mp4.mp4"video/mp4">
+        </video>
 
-  <section id="hero">
-    <div class="video-background">
-      <iframe src="https://www.youtube.com/embed/ozK4S-RwKgw?start=15&autoplay=1&mute=1&loop=1&playlist=ozK4S-RwKgw" 
-              frameborder="0" 
-              allow="autoplay; fullscreen">
-      </iframe>
-    </div>
+        <div class="hero-overlay"></div>
 
-    <div class="hero-content">
-      <h1>CINEMA COMO NENHUM OUTRO</h1>
-      <p>Escolha seus filmes favoritos e descubra clássicos e novidades.</p>
-    </div>
-  </section>
+        <div class="hero-content">
+            <h1 class="hero-title">BreakingTheMovies</h1>
+            <p class="hero-sub">Novos filmes selecionados diariamente.</p>
+    </header>
 
-  <section id="sobre-destaque">
-    <img src="img/img1.jpg" alt="Foto de destaque">
-    <div class="text-overlay">
-      <h2>QUALQUER FILME.<br>QUALQUER TELA.<br>QUALQUER MOMENTO.<br>QUALQUER LUGAR.</h2>
-    </div>
-  </section>
+    <section id="sobre-destaque">
+        <img src="img/img1.jpg" alt="Foto de destaque">
 
-  <section class="catalogo-intro">
-    <img class="filme-logo" src="img/pngwing.com.png" alt="Rolo de Filme">
+        <div class="text-overlay">
+            <h2>
+                QUALQUER FILME.<br>
+                QUALQUER TELA.<br>
+                QUALQUER MOMENTO.<br>
+                QUALQUER LUGAR.
+            </h2>
+        </div>
+    </section>
 
-    <div class="catalogo-texto">
-        <h2>
-            UM CATÁLOGO CURADO PARA VER E REVER.<br>
-            DIRETORES QUE MOLDARAM O CINEMA.<br>
-            PRODUÇÕES INDEPENDENTES, JOIAS ESCONDIDAS E SUCESSOS ACLAMADOS.<br>
-            TUDO EM UM SÓ LUGAR. DO CLÁSSICO AO CONTEMPORÂNEO.
-        </h2>
-    </div>
-</section>
+    <section class="catalogo-intro">
+        <img class="filme-logo" src="img/Absolute.webp" alt="Rolo de Filme">
 
-  <section id="catalogo" class="section-style">
-    <h2>Catálogo de Filmes</h2>
-    <div class="cards">
-      <div class="card">
-        <div class="play-button">▸</div>
-        <img src="img/img2.jpg" alt="Filme 4">
-        <p>Filme 4</p>
-      </div>
+        <div class="catalogo-texto">
+            <h2>
+                UM CATÁLOGO CURADO PARA VER E REVER.<br>
+                DIRETORES QUE MOLDARAM O CINEMA.<br>
+                PRODUÇÕES INDEPENDENTES, JOIAS ESCONDIDAS E SUCESSOS ACLAMADOS.<br>
+                TUDO EM UM SÓ LUGAR. DO CLÁSSICO AO CONTEMPORÂNEO.
+            </h2>
+        </div>
+    </section>
 
-      <div class="card">
-        <img src="img/filme5.jpg" alt="Filme 5">
-        <p>Filme 5</p>
-      </div>
+    <nav class="tabs">
+        <button class="tab active" data-tab="catalogo">Catálogo</button>
+        <button class="tab" data-tab="coming">Em breve</button>
+        <button class="tab" data-tab="last">Expirando</button>
+    </nav>
 
-      <div class="card">
-        <img src="img/filme6.jpg" alt="Filme 6">
-        <p>Filme 6</p>
-      </div>
-    </div>
-  </section>
+    <section class="tab-content active" id="catalogo">
 
-</main>
+        <h2 class="genre-title">NOVIDADES BTM</h2>
+        <div class="grid">
+            <div class="film-card"><img src="img/img2.jpg"><h3>Lake Mungo (2008)</h3></div>
+            <div class="film-card"><img src="img/img3.jpg"><h3>Nights of Cabiria (1957)</h3></div>
+            <div class="film-card"><img src="img/img7.jpg"><h3>Close (2022)</h3></div>
+        </div>
 
-<footer>
-  <p>2025 BreakingTheMovies</p>
-</footer>
+        <h2 class="genre-title">DIRECTED BY</h2>
+        <div class="grid">
+            <div class="film-card"><img src="img/img5.jpg"><h3>Akira Kurosawa</h3></div>
+            <div class="film-card"><img src="img/img8.jpg"><h3>David Lynch</h3></div>
+            <div class="film-card"><img src="img/img4.jpg"><h3>Alfred Hitchcock</h3></div>
+        </div>
 
+        <h2 class="genre-title">ACLAMADOS PELA CRÍTICA</h2>
+        <div class="grid">
+            <div class="film-card"><img src="img/img15.jpg"><h3>A Lista de Schindler (1993)</h3></div>
+            <div class="film-card"><img src="img/img16.jpg"><h3>O Poderoso Chefão (1972)</h3></div>
+            <div class="film-card"><img src="img/img17.jpg"><h3>Os  Samurais(1954)</h3></div>
+        </div>
+    </section>
 
-<div id="movieModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
+    <section class="tab-content" id="coming">
+        <div class="grid">
+            <div class="film-card"><img src="img/img9.jpg"><h3>Buffalo 66 (1998)</h3></div>
+            <div class="film-card"><img src="img/img10.jpg"><h3>Reflexões de um Liquidificador (2010)</h3></div>
+            <div class="film-card"><img src="img/img11.jpg"><h3>Durval Discos (2002)</h3></div>
+        </div>
+    </section>
 
-    <h2>Assista a este filme</h2>
-    <p>Faça login para continuar</p>
+    <section class="tab-content" id="last">
+        <div class="grid">
+            <div class="film-card"><img src="img/img12.jpg"><h3>Dreams (1990)</h3></div>
+            <div class="film-card"><img src="img/img13.jpg"><h3>Fallen Angels (1995)</h3></div>
+            <div class="film-card"><img src="img/img14.jpg"><h3>Perfect Days (2023)</h3></div>
+        </div>
+    </section>
 
-    <button class="login-button">Fazer Login</button>
-  </div>
-</div>
+    </div> 
 
-<script src="js/scripts.js"></script>
+    <script src="JS/script.js"></script>
 </body>
 </html>

@@ -2,11 +2,11 @@
 
 ## Integrantes
 - Nicole Greison — Função: CSS, layout e design
-- Eduardo Cullmann — Função: HTML, conteúdo, JS (Easter Egg LP)
-- Leonardo coloca o seu tb — Função: Testes e imagens
+- Eduardo Cullmann — Função: HTML, conteúdo, JS sobre o Easter Egg LP
+- Leonardo coloca o seu tb — Função: Html, funcionalidade, JS
 
 ## Sumário do projeto
-Website estilo locadora de filmes, inspirado na MUBI. Catálogo de filmes, easter egg secreto que abre uma fanpage do Linkin Park 
+Website estilo locadora de filmes, inspirado na MUBI. Catálogo de filmes, easter egg secreto que abre uma fanpage do Linkin Park.
 
 ## Estrutura do repositório
 - `index.html` - Página principal
