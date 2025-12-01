@@ -10,19 +10,44 @@
     margin: 0 auto;
 }
 
+.menu-principal {
+    width: 100%;
+    background: black;
+    padding: 12px 30px;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    position: fixed;   
+    top: 0;
+    left: 0;
+    z-index: 9999;   
+}
+
+.menu-principal a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.menu-principal a:hover {
+    opacity: 0.7;
+}
+
 .hero {
     position: relative;
-    height: 80vh;
+    height: 85vh;
     width: 100%;
     overflow: hidden;
 }
 
 .hero-video {
     position: absolute;
-    top: 30%;
+    top: 85%;
     left: 50%;
     min-width: 100%;
-    min-height: 110%;
+    min-height: 100%;
     transform: translate(-50%, -50%);
     object-fit: cover;
     filter: brightness(0.75);
@@ -149,7 +174,7 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* cards maiores */
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr)); 
     gap: 4px;
     margin-bottom: 20px;
 }
@@ -189,7 +214,20 @@
 
 }
 
+.dont-click {
+    margin-top: 60px;
+    padding: 20px 0;
+    text-align: center;
+}
 
+.dont-click a {
+    font-size: 1rem;          
+    color: #7e290d;
+    opacity: 0.10;             
+    text-decoration: none;
+    transition: opacity 0.4s ease;
+}
 
-
-
+.dont-click a:hover {
+    opacity: 0.8;               
+}
